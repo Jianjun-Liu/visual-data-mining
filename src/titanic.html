@@ -29,12 +29,11 @@
 </div>
 <div id="example" class="parcoords" style="width:2048px;height:320px;"></div>
 
-<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+<script src="../lib/d3.v3.min.js"></script>
 <script src="../lib/underscore.js"></script>
 <script src="../lib/underscore.math.js"></script>
 <script src="../lib/d3.parcoords.js"></script>
-<script src="../data/adult-table.js"></script>
-<link rel="stylesheet" type="text/css" href="../css/d3.parcoords.css">
+<link rel="stylesheet" type="text/css" href="../css/d3.paracoords.css">
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <script>
   var pc_progressive;
@@ -78,7 +77,7 @@
             .style("opacity", 0);
 
     // load data
-    d3.csv("../data/titanic.csv", function(error, data) {
+    d3.csv("../data/titanic_para.csv", function(error, data) {
 
       // change string (from CSV) into number format
       data.forEach(function(d) {
